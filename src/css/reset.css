@@ -4,7 +4,21 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: var(--preto);
+    color: var(--texto);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
 button {
     cursor: pointer;
-    border: none;
+    border: none;    
+    background-color: transparent;
 }

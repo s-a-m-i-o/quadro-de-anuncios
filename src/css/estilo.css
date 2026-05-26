@@ -1,0 +1,71 @@
+header.cabecalho {
+    border-bottom: 1px solid var(--roxo-medio);
+}
+
+header.cabecalho .titulo{
+    color: var(--dourado);
+    text-align: center;
+    font-family: var(--titulo);
+    padding: 20px 40px;
+    filter: drop-shadow(1px 2px 2px var(--dourado));
+}
+
+.conteudo {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 5px;
+    
+}
+
+.conteudo .btn {
+    color:var(--dourado-claro);
+    padding: 45px 15px;
+    transition: all .3s;    
+    border-radius: 7px;
+    border: 1px solid transparent;
+    font-size: 1.5rem;
+
+}
+
+.conteudo .btn:hover {
+    border: 1px solid var(--dourado);
+}
+
+.conteudo .designacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteudo .designacao .titulo-da-semana {
+    color: var(--dourado-claro);
+    font-family: var(--sub-titulo);
+}
+
+.conteudo .designacao img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    height: auto;
+}
+
+footer.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: var(--titulo);
+    color: var(--dourado);
+    padding: 20px 40px;
+    border-top: 1px solid var(--roxo-medio);
+}
+
+@media (min-width:768px) {
+    footer.rodape {
+        flex-direction: row;
+    }
+}
