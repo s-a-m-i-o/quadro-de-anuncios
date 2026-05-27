@@ -7,7 +7,7 @@
 body {
     background-color: var(--preto);
     color: var(--texto);
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }

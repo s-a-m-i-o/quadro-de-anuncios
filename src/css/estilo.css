@@ -6,7 +6,6 @@ header.cabecalho .titulo{
     color: var(--dourado);
     text-align: center;
     font-family: var(--titulo);
-    padding: 20px 40px;
     filter: drop-shadow(1px 2px 2px var(--dourado));
 }
 
@@ -17,17 +16,35 @@ header.cabecalho .titulo{
     justify-content: center;
     width: 100%;
     padding: 20px 5px;
+    position: relative;
     
 }
 
 .conteudo .btn {
-    color:var(--dourado-claro);
+    color:var(--preto);
     padding: 45px 15px;
     transition: all .3s;    
     border-radius: 7px;
     border: 1px solid transparent;
     font-size: 1.5rem;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.7;
+}
 
+@media (min-width:768px) {
+    .conteudo .btn{
+        color: var(--dourado);
+        opacity: 1;
+        font-size: 3rem;
+    }
+}
+
+.conteudo button.esquerdo {
+    right: 85%;
+}
+.conteudo button.direito {
+    left: 85%;
 }
 
 .conteudo .btn:hover {
