@@ -37,6 +37,10 @@ header.cabecalho .titulo{
     filter: drop-shadow(1px 2px 3px var(--dourado-claro));
 }
 
+.btn:disabled {
+    opacity: 0.1;
+    cursor: not-allowed;
+}
 
 .conteudo .btn:hover {
     border: 1px solid var(--dourado);
