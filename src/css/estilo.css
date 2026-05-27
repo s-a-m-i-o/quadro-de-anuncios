@@ -1,5 +1,6 @@
 header.cabecalho {
     border-bottom: 1px solid var(--roxo-medio);
+    padding: 10px 20px;
 }
 
 header.cabecalho .titulo{
@@ -33,6 +34,7 @@ header.cabecalho .titulo{
     border: 1px solid transparent;
     font-size: 1.5rem;
     padding: 5px 30px;
+    filter: drop-shadow(1px 2px 3px var(--dourado-claro));
 }
 
 
