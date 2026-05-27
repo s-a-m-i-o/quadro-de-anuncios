@@ -1,6 +1,8 @@
 const esquerdo = document.querySelector('#btn-esquerda');
 const direito = document.querySelector('#btn-direita');
 const img = document.querySelector('#imagem-semana');
+const hoje = new Date();
+const dia = hoje.getDate();
 
 let imagemAtual = 0;
 const imagens = ['1semana.jpg', '2semana.jpg', '3semana.jpg', '4semana.jpg', '5semana.jpg'];
@@ -29,3 +31,7 @@ esquerdo.addEventListener('click', function() {
     direito.disabled = false;
     img.src = '/src/img/' + imagens[imagemAtual];    
 })
+
+console.log(dia);
+
+
