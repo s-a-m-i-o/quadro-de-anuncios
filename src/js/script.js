@@ -18,7 +18,7 @@ if (dia <= 7) {
     imagemAtual = 4;
 }
 
-img.src = '/src/img/' + imagens[imagemAtual]
+img.src = '/src/img/01mwb/' + imagens[imagemAtual]
 
 direito.addEventListener('click', function() {
     imagemAtual = imagemAtual +1;
@@ -29,7 +29,7 @@ direito.addEventListener('click', function() {
             direito.disabled = false;
         }
     esquerdo.disabled = false;    
-    img.src = '/src/img/' + imagens[imagemAtual];
+    img.src = '/src/img/01mwb/' + imagens[imagemAtual];
     
 })
 
@@ -42,9 +42,8 @@ esquerdo.addEventListener('click', function() {
             esquerdo.disabled = false;
         }
     direito.disabled = false;
-    img.src = '/src/img/' + imagens[imagemAtual];    
+    img.src = '/src/img/01mwb/' + imagens[imagemAtual];    
 })
 
-console.log(dia);
 
 
