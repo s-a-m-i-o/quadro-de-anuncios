@@ -6,6 +6,19 @@ const dia = hoje.getDate();
 
 let imagemAtual = 0;
 const imagens = ['1semana.jpg', '2semana.jpg', '3semana.jpg', '4semana.jpg', '5semana.jpg'];
+if (dia <= 7) {
+    imagemAtual = 0;
+} else if (dia <= 14) {
+    imagemAtual = 1;
+} else if (dia <= 21) {
+    imagemAtual = 2;
+} else if (dia <= 28) {
+    imagemAtual = 3;
+} else {
+    imagemAtual = 4;
+}
+
+img.src = '/src/img/' + imagens[imagemAtual]
 
 direito.addEventListener('click', function() {
     imagemAtual = imagemAtual +1;
