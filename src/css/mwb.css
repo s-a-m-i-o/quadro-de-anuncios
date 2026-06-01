@@ -46,6 +46,14 @@
 .conteudo .titulo-semana {
     color: var(--dourado-claro);
     font-family: var(--sub-titulo);
+    text-align: center;
+    font-size: 1rem;
+}
+
+@media (min-width:768px) {
+    .conteudo .titulo-semana {
+        font-size: 1.6rem;
+    }
 }
 
 .conteudo .designacao img {

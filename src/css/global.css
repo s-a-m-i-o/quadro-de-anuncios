@@ -15,8 +15,23 @@ header {
     color: var(--dourado);
     text-align: center;
     font-family: var(--titulo);
-    filter: drop-shadow(1px 2px 2px var(--dourado));
 }
+
+a.voltar {
+background-color: var(--texto);
+text-transform: uppercase;
+width: 80px;
+height: 20px;
+padding: 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--preto);
+font-weight: bold;
+margin: 0 0 5px 5px;
+border-radius: 7px;
+}
+
 
 footer{
     display: flex;
