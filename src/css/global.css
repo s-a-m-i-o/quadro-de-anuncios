@@ -18,18 +18,19 @@ header {
 }
 
 a.voltar {
-background-color: var(--texto);
 text-transform: uppercase;
-width: 80px;
-height: 20px;
-padding: 5px;
 display: flex;
 align-items: center;
 justify-content: center;
 color: var(--preto);
 font-weight: bold;
-margin: 0 0 5px 5px;
+font-size: 1.7rem;
+padding: 10px 20px;
 border-radius: 7px;
+}
+
+a.voltar i {
+    color: var(--dourado);
 }
 
 
