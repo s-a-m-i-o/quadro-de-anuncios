@@ -1,0 +1,20 @@
+# Quadro de Anúncios — Congregação LS São Carlos
+
+Site para visualização das designações semanais da congregação.
+
+## Páginas
+- **Início** — página principal com acesso a todas as seções
+- **MWB** — designações da reunião de meio de semana
+- **Reunião Pública** — programação do final de semana
+- **Limpeza** — escala de limpeza
+- **Pregação** — designações de campo
+
+## Tecnologias
+- HTML5
+- CSS3
+- JavaScript
+
+## Como atualizar
+1. Substitua as imagens na pasta `src/img/` pela pasta correspondente
+2. Atualize o array de imagens no `script.js` se o número de semanas mudar
+3. Faça commit e push — o site atualiza automaticamente
