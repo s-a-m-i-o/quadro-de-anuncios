@@ -66,3 +66,59 @@ footer {
         flex-direction: row;
     }
 }
+
+
+/* MENU HAMBURGER */
+/* BOTÃO HAMBÚRGUER */
+.menu-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    font-size: 1.5rem;
+    color: var(--dourado);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* OVERLAY — escondido por padrão */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.98);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+    
+}
+
+/* OVERLAY — visível quando tem a classe ativo */
+.menu-overlay.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* LINKS DO MENU */
+.menu-overlay a {
+    color: var(--dourado);
+    font-size: 1.5rem;
+    font-family: var(--sub-titulo);
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.menu-overlay a:hover {
+    color: var(--dourado-claro);
+}
+/* FIM MENU */
