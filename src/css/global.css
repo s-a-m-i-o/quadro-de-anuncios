@@ -122,3 +122,9 @@ footer {
     color: var(--dourado-claro);
 }
 /* FIM MENU */
+
+a.biblia {
+    color: var(--dourado);
+    padding: 3px 10px;
+    margin: 10px;
+}
