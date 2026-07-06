@@ -5,7 +5,7 @@ const hoje = new Date();
 const dia = hoje.getDate();
 
 let imagemAtual = 0;
-const imagens = ['1semana.jpg', '2semana.jpg', '3semana.jpg', '4semana.jpg', '5semana.jpg'];
+const imagens = ['1semana.jpg', '2semana.jpg', '3semana.jpg', '4semana.jpg'];
 if (dia <= 7) {
     imagemAtual = 0;
 } else if (dia <= 14) {
@@ -22,8 +22,8 @@ img.src = '/src/img/01mwb/' + imagens[imagemAtual]
 
 direito.addEventListener('click', function() {
     imagemAtual = imagemAtual +1;
-        if (imagemAtual > 4) {
-            imagemAtual = 4;
+        if (imagemAtual > 3) {
+            imagemAtual = 3;
             direito.disabled = true;
         } else {
             direito.disabled = false;
