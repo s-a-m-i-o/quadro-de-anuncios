@@ -9,6 +9,7 @@ body {
 header {
     border-bottom: 1px solid var(--roxo-medio);
     padding: 10px 20px;
+    background-color: var(--chumbo);
 }
 
 .titulo{
@@ -40,9 +41,10 @@ footer{
     align-items: center;
     justify-content: space-between;
     font-family: var(--titulo);
-    color: var(--dourado);
+    color: var(--texto);
     padding: 20px 40px;
     border-top: 1px solid var(--roxo-medio);
+    background-color: var(--chumbo)
 }
 
 @media (min-width:768px) {
@@ -56,7 +58,6 @@ footer {
     align-items: center;
     justify-content: space-between;
     font-family: var(--titulo);
-    color: var(--dourado);
     padding: 20px 40px;
     border-top: 1px solid var(--roxo-medio);
 }
