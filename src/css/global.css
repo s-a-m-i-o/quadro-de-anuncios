@@ -9,7 +9,6 @@ body {
 header {
     border-bottom: 1px solid var(--roxo-medio);
     padding: 10px 20px;
-    background-color: var(--chumbo);
 }
 
 .titulo{
@@ -44,7 +43,6 @@ footer{
     color: var(--texto);
     padding: 20px 40px;
     border-top: 1px solid var(--roxo-medio);
-    background-color: var(--chumbo)
 }
 
 @media (min-width:768px) {
