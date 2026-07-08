@@ -1,49 +1,41 @@
 const esquerdo = document.querySelector('#btn-esquerda');
 const direito = document.querySelector('#btn-direita');
 const img = document.querySelector('#imagem-semana');
-const hoje = new Date();
-const dia = hoje.getDate();
 
-let imagemAtual = 0;
-const imagens = ['1semana.jpg', '2semana.jpg', '3semana.jpg', '4semana.jpg'];
-if (dia <= 7) {
-    imagemAtual = 0;
-} else if (dia <= 14) {
-    imagemAtual = 1;
-} else if (dia <= 21) {
-    imagemAtual = 2;
-} else if (dia <= 28) {
-    imagemAtual = 3;
-} else {
-    imagemAtual = 4;
+// Lista de imagens - apague ou acrescente '5semana.jpg' conforme o mês
+const imagens = ['1semana.jpg', '2semana.jpg', '3semana.jpg', '4semana.jpg', '5semana.jpg'];
+
+// Descobre o dia de hoje e calcula qual semana mostrar
+const dia = new Date().getDate();
+
+let imagemAtual = Math.floor((dia - 1) / 7);
+
+// Se passar do total de imagens que existem, mostra a última
+if (imagemAtual > imagens.length - 1) {
+    imagemAtual = imagens.length - 1;
 }
 
-img.src = '/src/img/01mwb/' + imagens[imagemAtual]
+// Mostra a imagem certa
+mostrarImagem();
 
+// Botão direita
 direito.addEventListener('click', function() {
-    imagemAtual = imagemAtual +1;
-        if (imagemAtual > 3) {
-            imagemAtual = 3;
-            direito.disabled = true;
-        } else {
-            direito.disabled = false;
-        }
-    esquerdo.disabled = false;    
-    img.src = '/src/img/01mwb/' + imagens[imagemAtual];
-    
-})
+    if (imagemAtual < imagens.length - 1) {
+        imagemAtual++;
+        mostrarImagem();
+    }
+});
 
+// Botão esquerda
 esquerdo.addEventListener('click', function() {
-    imagemAtual = imagemAtual -1;
-        if (imagemAtual < 0) {
-            imagemAtual = 0
-            esquerdo.disabled = true;
-        } else {
-            esquerdo.disabled = false;
-        }
-    direito.disabled = false;
-    img.src = '/src/img/01mwb/' + imagens[imagemAtual];    
-})
+    if (imagemAtual > 0) {
+        imagemAtual--;
+        mostrarImagem();
+    }
+});
 
-
-
+function mostrarImagem() {
+    img.src = './src/img/01mwb/' + imagens[imagemAtual] + '?v=' + Date.now();
+    direito.disabled = imagemAtual === imagens.length - 1;
+    esquerdo.disabled = imagemAtual === 0;
+}
