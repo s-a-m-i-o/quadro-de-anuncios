@@ -10,3 +10,30 @@ img {
     width: 100%;
     height: auto;
 }
+
+.reforma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+img.andamento {
+    width: 300px;
+    animation: rotacao 8s linear infinite;
+    padding: 30px;
+    filter: drop-shadow(0 0 5px rgb(126, 61, 1));
+}
+
+img.menor {
+    width: 200px;
+}
+
+@keyframes rotacao {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
