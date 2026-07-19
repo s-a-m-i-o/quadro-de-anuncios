@@ -2,9 +2,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 
-nav.cards {
+section.cards {
     padding: 15px;
     border-radius: 7px;
     display: flex;
@@ -13,6 +14,44 @@ nav.cards {
     justify-content: center;
     border: 1px solid var(--roxo-escuro);
 }
+
+section.anuncios {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.anuncios .btn-anuncio {
+    border: 1px solid var(--dourado);
+    padding: 10px 30px;
+    color: var(--texto);
+    font-weight: bold;
+    border-radius: 7px;
+    animation: pulsar 1s ease infinite;
+    margin: 15px;
+}
+
+
+@keyframes pulsar {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0px var(--dourado-claro);
+    }
+    50% {
+        transform: scale(1.2);
+        box-shadow: 0 0 15px var(--dourado-claro);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0px var(--dourado-claro);
+    }
+}
+
+
 
 @media (min-width:768px) {
     .conteudo .cards {

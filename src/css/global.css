@@ -11,10 +11,12 @@ header {
     padding: 10px 20px;
 }
 
-.titulo{
+.titulo,
+.subtitulo{
     color: var(--dourado);
     text-align: center;
     font-family: var(--titulo);
+    text-transform: uppercase;
 }
 
 a.voltar {
