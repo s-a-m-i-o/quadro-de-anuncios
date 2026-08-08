@@ -1,5 +1,7 @@
 body {
-    background-color: var(--preto);
+    background: linear-gradient(180deg, #000 70%, #230233 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: var(--texto);
     display: flex;
     flex-direction: column;

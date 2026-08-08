@@ -72,8 +72,8 @@ section.anuncios {
     justify-content: center;  
     margin: 5px;
     border-radius: 7px;
-    border: 2px solid var(--roxo-medio);
-    background-color: var(--roxo-escuro);
+    border: 1px solid var(--dourado-claro);
+    background-color: var(--cards);
     transition: all .5s;
     text-align: center;
     gap: 3px;
@@ -81,12 +81,12 @@ section.anuncios {
 
 .cards a:hover {
     background-color: var(--link-ativo);
-    border:  2px solid var(--roxo-escuro);
+    border: 1px solid var(--roxo-escuro);
 }
 
 .cards a i {
     color: var(--dourado-claro);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .cards a span.nome {
