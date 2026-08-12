@@ -1,3 +1,7 @@
+header {
+    padding-top: 40px;
+}
+
 main.conteudo {
     display: flex;
     flex-direction: column;
